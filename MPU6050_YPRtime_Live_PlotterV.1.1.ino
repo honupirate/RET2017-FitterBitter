@@ -151,7 +151,9 @@ void loop() {
     if (!dmpReady) return;
 
     // wait for MPU interrupt or extra packet(s) available
-    while (!mpuInterrupt && fifoCount < packetSize) 
+    while (!mpuInterrupt && fifoCount < packetSize) {
+        //DON'T DELETE these brackets, they are important
+    }
 
     mpuInterrupt = false;
     mpuIntStatus = mpu.getIntStatus();
