@@ -1,6 +1,9 @@
-MAG_ADDRESS	=	0x1E			
-ACC_ADDRESS	=	0x1E			
-GYR_ADDRESS     =       0x6A
+
+# correct address values from https://github.com/jckw/Adafruit_LSM9DS0
+
+MAG_ADDRESS	=	0x1D			
+ACC_ADDRESS	=	0x1D			
+GYR_ADDRESS     =       0x6B
 
 #LSM9DS0 Gyro Registers	
 WHO_AM_I_G	=	0x0F			

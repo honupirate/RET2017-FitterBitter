@@ -92,13 +92,13 @@ def initSensor():
 
 
 def readAccelX():
-	return readAccx()
+	return readACCx()
 
 def readAccelY():
-	return readAccy()
+	return readACCy()
 
 def readAccelZ():
-	return readAccz()
+	return readACCz()
 
 def readAccel():
 	return readAccelX(), readAccelY(), readAccelZ()
