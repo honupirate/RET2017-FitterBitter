@@ -6,7 +6,7 @@ This code provides a reference implementation for integrating Raspberry Pi with 
 The main code is readsensor.py which continuously reads from a sensor and outputs the readings to a specified display. From the Raspberry Pi terminal, type:
 
 ```
-python readsensor.py mpu|lsm|dummy [print|plotly]
+python readsensor.py mpu|lsm|dummy [print|plotly|matplot]
 # brackets "[]" mean optional parameters; type without brackets
 ```
 Choose a sensor from:
@@ -18,6 +18,13 @@ Choose a display from:
 * print (print to text output, this is the default if blank)
 * plotly (send to plot.ly)
 * matplot (send to matplot)
+
+Note: to get matplotlib to work on Pi:
+```
+sudo apt-get install python-dev
+sudo pip install matplotlib
+sudo apt-get install python-gi-cairo
+`
 
 The code structure is organized as follows:
 
