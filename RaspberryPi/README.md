@@ -24,7 +24,7 @@ Note: to get matplotlib to work on Pi:
 sudo apt-get install python-dev
 sudo pip install matplotlib
 sudo apt-get install python-gi-cairo
-`
+```
 
 The code structure is organized as follows:
 
