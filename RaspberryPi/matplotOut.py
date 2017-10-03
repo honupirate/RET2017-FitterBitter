@@ -48,13 +48,19 @@ def displayValues(data):
 		return
 
 	x.append(t)
+	ymin = 1000000
+	ymax = -1000000
 	for i in range(numdata):
 		ys[i].append(data[i])
 		lines[i].set_data(x[-xshow:],ys[i][-xshow:])
-		if data[i] < ymin:
-			ymin = data[i]
-		if data[i] > ymax:
-			ymax = data[i]
+		if min(ys[i][-xshow:]) < ymin:
+			ymin = min(ys[i][-xshow:])
+		if max(ys[i][-xshow:]) > ymax:
+			ymax = max(ys[i][-xshow:])
+		#if data[i] < ymin:
+		#	ymin = data[i]
+		#if data[i] > ymax:
+		#	ymax = data[i]
 
 	ax.axis([t-xshow,t,ymin,ymax])
 	t += 1
